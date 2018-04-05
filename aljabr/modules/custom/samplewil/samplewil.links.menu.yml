@@ -1,0 +1,6 @@
+samplewil.config_form:
+  title: 'sample settings'
+  parent: system.admin_config_system
+  description: 'Configure sample settings'
+  weight: -10
+  route_name: samplewil.config_form

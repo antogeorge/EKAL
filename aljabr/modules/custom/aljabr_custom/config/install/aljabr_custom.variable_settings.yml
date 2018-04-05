@@ -1,0 +1,21 @@
+branches_form_text_prefix: '(Our branches are closer to you throughout the kingdom. Please select the city.)'
+comments_header: 'Correspond with us'
+comments_body: 'We appreciate your comments on our service'
+comments_button: 'Post your comment'
+comments_form_header: 'Appreciate your comments'
+comments_form_body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+career_form_header: 'Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.'
+subscribemail_header: 'Mailing list'
+subscribemail_body: 'Receive the latest news and exclusive benefits for you by filling out the form from the link below.'
+subscribemail_button: 'Subscribe to our mailing list.'
+subscribemail_form_header: 'Subscribe mailing list'
+subscribemail_form_body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+job_title: 'التاريخ'
+job_date: 'المسمى الوظيفي'
+table_header: 'أحدث الوظائف'
+branch_header: 'فروعنا أقرب إليك فيأنحاء المملكة'
+branch_url: 'aljabr-branches'
+branch_label: 'أحدث الوظائف'
+headoffice_branch_lat: 50.132530
+headoffice_branch_long: 26.411896
+langcode: ar

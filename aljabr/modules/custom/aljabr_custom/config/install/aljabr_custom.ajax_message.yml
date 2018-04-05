@@ -1,0 +1,4 @@
+invalid_message: 'Sorry, please check your inputs and try again.'
+failure_message: 'Sorry, something went wrong. Please try again.'
+success_message: 'Thank You for your time. We will get back to you soon.'
+langcode: ar

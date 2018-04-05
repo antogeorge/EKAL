@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Theme override for a views mini-pager.
+ *
+ * Available variables:
+ * - items: List of pager items.
+ *
+ * @see template_preprocess_views_mini_pager()
+ */
+#}
+{% if items.previous or items.next %}
+  <nav role="navigation" aria-labelledby="pagination-heading">
+    <!-- <h4 class="visually-hidden">{{ 'Pagination'|t }}</h4> -->
+    <ul class="js-pager__items">
+      {% set activeclass = 'pagninactive' %}
+      {% if items.previous %}
+        {% set activeclass = 'pagnactive' %}
+        {% set previoustext = (items.previous.text|t)|default('>>'|t) %}
+        {% set prevhref = items.previous.href %}
+      {% else %}
+        {% set previoustext = ('Previous '|t)|default('<<'|t) %}
+        {% set prevhref = '' %}
+      {% endif %}
+
+        <li class="pagnt">
+          <a class="{{ activeclass }}" href="{{ prevhref }}" title="" rel="prev"{{ items.previous.attributes|without('href', 'title', 'rel') }}>
+            <!-- <span class="visually-hidden">{{ 'Previous page'|t }}</span> -->
+            <span aria-hidden="true">{{ previoustext }}</span>
+          </a>
+        </li>
+
+      {% if items.current %}
+ <!--        <li>
+          {% trans %}
+            Page {{ items.current }}
+          {% endtrans %}
+        </li> -->
+      {% endif %}
+      {% set activeclass = 'pagninactive' %}
+      {% if items.next %}
+        {% set activeclass = 'pagnactive' %}
+        {% set nexttext = (items.next.text|t)|default('>>'|t) %}
+        {% set nexthref = items.next.href %}
+      {% else %}
+        {% set nexttext = ('Next '|t)|default('<<'|t) %}
+        {% set nexthref = '' %}
+      {% endif %}
+
+        <li class="pagnt">
+          <a class="{{ activeclass }}" href="{{ nexthref }}" title="" rel="next"{{ items.next.attributes|without('href', 'title', 'rel') }}>
+            <!-- <span class="visually-hidden">{{ 'Next page'|t }}</span> -->
+            <span aria-hidden="true">{{ nexttext }}</span>
+          </a>
+        </li>
+
+    </ul>
+  </nav>
+{% endif %}

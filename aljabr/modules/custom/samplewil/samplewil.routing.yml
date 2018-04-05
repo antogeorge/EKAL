@@ -1,0 +1,7 @@
+samplewil.config_form:
+  path: '/admin/config/sample-settings'
+  defaults:
+    _form: '\Drupal\samplewil\Form\AlJabrFinanceSettingsForm'
+    _title: 'Al Jabr'
+  requirements:
+    _permission: 'administer account settings'

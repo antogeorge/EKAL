@@ -1,0 +1,4 @@
+first_name_mandatory: 'Please enter your name'
+email_mandatory: 'Please enter your Email'
+email_validate: 'Entered Email is not correct'
+langcode: ar

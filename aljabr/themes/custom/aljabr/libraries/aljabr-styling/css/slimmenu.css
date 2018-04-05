@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2017, 12:57:57 AM
+    Author     : shameer
+*/
+
+.navContainer{ width:100%; float:left; clear:both; }
+
+.menuContent { padding:0;}
+#menu {
+	/*! background:#4cb050; */ margin:0 auto;
+	clear: both; width: 100%; max-width: 92.3em; }
+#menu a { color:#022169; font-family: 'DIN Next LT W23'; font-size:0.98em; }
+#menu ul li ul li { }
+#menu ul li ul li a { font-size:0.9em; padding-left:0; padding-left:10px; }
+#menu a:hover, #menu a.is-active { color:#ff0000!important; }
+#menu ul li ul i { float:right; padding-left:5px;}
+.dropOpen{padding-right:20px!important}
+.menu-collapser{position:relative;width:100%;height:38px;padding:0 8px;font-size:16px;line-height:18px;
+	/* text-shadow:0 1px 0 rgba(0,0,0,.5); background-color:#31353d; */ -moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.collapse-button,.menu-collapser{color:#FFF;box-sizing:border-box}
+.collapse-button{position:absolute;right:8px;top:41%;width:40px;padding:7px 8px;background-color:#022169;/*! background-image:linear-gradient(to bottom,#151515,#040404); */background-repeat:repeat-x;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);border-radius:4px;border-style:solid;border-width:1px;box-shadow:0 1px 0 rgba(255,255,255,.1) inset,0 1px 0 rgba(255,255,255,.075);text-shadow:0 -1px 0 rgba(0,0,0,.25);cursor:pointer;font-size:14px;text-align:center;transform:translate(0,-50%);-o-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.collapse-button:focus,.collapse-button:hover{background-image:none;background-color:#040404;color:#FFF}
+.collapse-button .icon-bar{background-color:#F5F5F5;border-radius:1px;box-shadow:0 1px 0 rgba(0,0,0,.25);display:block;height:3px;width:23px;margin:2px 0}
+ul.slimmenu{ width:100%;margin:0;padding:0;list-style-type:none}
+ul.slimmenu li{position:relative;padding:0;margin:0;display:inline-block;float:left;font-weight: bold;}
+ul.slimmenu>li{border-right:1px solid #fff }
+ul.slimmenu>li:last-child{border-right:none}
+ul.slimmenu li.noDrop a{padding:12px 18px}
+ul.slimmenu li a{display:block; padding:12px 14px;margin:0; line-height:1.2em; text-transform:uppercase;text-decoration:none;text-shadow:0 1px 0 rgba(255,255,255,.2);transition:background-color .5s ease-out;-o-transition:background-color .5s ease-out;-moz-transition:background-color .5s ease-out;-webkit-transition:background-color .5s ease-out}
+ul.slimmenu li a:hover{ text-decoration:none}
+ul.slimmenu li .sub-collapser{background:rgba(255,255,255,.075);position:absolute;right:0;top:0;width:32px;height:100%;text-align:center;z-index:999;cursor:pointer}
+ul.slimmenu li .sub-collapser:before{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-.008em}
+ul.slimmenu li .sub-collapser>i{color:#e31d1a;font-size:11px;display:inline-block;vertical-align:middle}
+ul.slimmenu li>ul,ul.slimmenu li>ul>li ul{width:100%;display:none;position:absolute;z-index:999}
+ul.slimmenu li ul{margin:0;list-style-type:none;  }
+ul.slimmenu li ul li{border-top:1px dotted #40444b;padding:0;margin:0;background:#fff;width: 100%;}
+ul.slimmenu li ul li a{text-transform:none;  }
+ul.slimmenu li>ul{margin:0;padding:0;left:0;top:100%;/*! border-top:2px solid #40444b; */border-bottom:4px solid #40444b;min-width: 160px; background-color: #fff; }
+ul.slimmenu li>ul>li ul{left:100%;top:0}
+ul.slimmenu.collapsed li{display:block;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+ul.slimmenu.collapsed li a{display:block;border-bottom:1px solid rgba(0,0,0,.075);box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+ul.slimmenu.collapsed li .sub-collapser{height:40px}
+ul.slimmenu.collapsed li>ul{display:none;position:static}
+
+
+
+/*---------------------------------------------------- arb ------------------*/
+
+.arabic ul.slimmenu li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+}
+.arabic #menu a {
+    color: #022169;
+    font-family: 'DIN Next LT W23';
+    font-size: 1.1em;
+}
+.arabic ul.slimmenu li a {
+    display: block;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.2);
+    transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+}
+

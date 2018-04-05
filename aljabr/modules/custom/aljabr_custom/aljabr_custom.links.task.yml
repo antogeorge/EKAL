@@ -1,0 +1,48 @@
+aljabr_custom.set_admin:
+  route_name: aljabr_custom.set_admin
+  title: 'Settings'
+  base_route: aljabr_custom.set_admin
+aljabr_custom.finance_settings:
+  route_name: aljabr_custom_finance.set_admin
+  title: 'Settings'
+  base_route: aljabr_custom_finance.set_admin
+aljabr_custom.finance_errormessage:
+  route_name: aljabr_custom_message.error_message
+  title: 'Settings'
+  base_route: aljabr_custom_message.error_message
+aljabr_custom.ajax_message:
+  route_name: aljabr_custom_ajax.message
+  title: 'Settings'
+  base_route: aljabr_custom_ajax.message
+aljabr_custom.set_variable_settings:
+  route_name: aljabr_custom.set_variable_settings
+  title: 'Settings'
+  base_route: aljabr_custom.set_variable_settings
+aljabr_custom.career_settings:
+  route_name: aljabr_custom.career_settings
+  title: 'Settings'
+  base_route: aljabr_custom.career_settings
+aljabr_custom.career_errormessage:
+  route_name: aljabr_custom.career_errormessage
+  title: 'Settings'
+  base_route: aljabr_custom.career_errormessage
+aljabr_custom.comments_settings:
+  route_name: aljabr_custom.comments_settings
+  title: 'Settings'
+  base_route: aljabr_custom.comments_settings
+aljabr_custom.comments_errormessage:
+  route_name: aljabr_custom.comments_errormessage
+  title: 'Settings'
+  base_route: aljabr_custom.comments_errormessage
+aljabr_custom.subscribe_errormessage:
+  route_name: aljabr_custom.subscribe_errormessage
+  title: 'Settings'
+  base_route: aljabr_custom.subscribe_errormessage
+aljabr_custom.email_settings:
+  route_name: aljabr_custom.email_settings
+  title: 'Settings'
+  base_route: aljabr_custom.email_settings
+aljabr_custom.calculator_settings:
+  route_name: aljabr_custom.calculator_settings
+  title: 'Settings'
+  base_route: aljabr_custom.calculator_settings

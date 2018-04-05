@@ -1,0 +1,13 @@
+email_subscribe_form_subject: 'Subscribe to Emil - Notification'
+home: 'https://google.com'
+career_form_subject: 'Career - Notification'
+comments_form_subject: 'Comments - Notification'
+finance_form_subject: 'Finance - Notification'
+smtp_secure: 'ssl'
+host: 'smtp.gmail.com'
+port: 465
+username: 'wilfred.arambhan@gmail.com'
+pass: 'Wil_9105'
+fromemail: 'wilfred@gmail.com'
+toemail: 'wilfredarambhan@yahoo.com'
+langcode: ar

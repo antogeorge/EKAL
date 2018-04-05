@@ -1,0 +1,90 @@
+about_us_layout:
+  label: About Us Layout
+  category: Al Jabr Layout
+  template: templates/layout/about-us
+  library: aljabr/aljabr-styling
+  regions:
+    banner:
+      label: Side Banner
+    top_block:
+      label: Top Block
+    middle_block:
+      label: Middle Block
+    bottom_block:
+      label: Bottom Block
+social_layout:
+  label: Social Page Layout
+  category: Al Jabr Layout
+  template: templates/layout/social
+  library: aljabr/aljabr-styling
+  regions:
+    banner:
+      label: Side Banner
+    top_block:
+      label: Top Block
+    middle_block:
+      label: Middle Block
+    bottom_block:
+      label: Bottom Block
+offer_layout:
+  label: Offer Page Layout
+  category: Al Jabr Layout
+  template: templates/layout/offer
+  library: aljabr/aljabr-styling
+  regions:
+    banner:
+      label: Side Banner
+    top_block:
+      label: Top Block
+    side_block:
+      label: Side Block
+    slider_block:
+      label: Slider Block
+    comments_form_block:
+      label: Comments Form Block
+    subscribe_mail_block:
+      label: Subscribe Mail Form Block
+finance_layout:
+  label: Finance Page Layout
+  category: Al Jabr Layout
+  template: templates/layout/finance
+  library: aljabr/aljabr-styling
+  regions:
+    banner:
+      label: Side Banner
+    top_block:
+      label: Top Block
+    form_block:
+      label: Form Block
+career_layout:
+  label: Career Page Layout
+  category: Al Jabr Layout
+  template: templates/layout/career
+  library: aljabr/aljabr-styling
+  regions:
+    banner:
+      label: Side Banner
+    top_block:
+      label: Top Block
+    job_block:
+      label: Job Block
+    table_block:
+      label: Table Header Block
+    form_block:
+      label: Form Block
+branches_layout:
+  label: Branches Layout
+  category: Al Jabr Layout
+  template: templates/layout/branches
+  library: aljabr/aljabr-styling
+  regions:
+    banner:
+      label: Side Banner
+    top_block:
+      label: Top Block
+    branches_form:
+      label: Branches Form Block
+    contact_form:
+      label: Contact Form Block
+    contact_text:
+      label: Contact Block

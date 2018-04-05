@@ -1,0 +1,15 @@
+<?php
+
+/**
+* hook_link_alter()
+*/
+
+function aljabr_custom_link_alter(&$variables) {
+  if (!$variables['url']->isRouted()) {
+    $uri = $variables['url']->getUri();
+    // Only want the Contact Us to open in new tab.
+    if ($uri == 'https://twitter.com/aljabrfinancing' || $uri == 'https://www.facebook.com/aljabrfinancing/' || $uri == 'https://www.youtube.com/channel/UCXXd7fJb4qWSgiveNARnjyA') {
+      $variables['options']['attributes'] = ['target' => '_blank'];
+    }
+  }
+}

@@ -1,0 +1,7 @@
+first_name_mandatory: 'Please enter your name'
+email_mandatory: 'Please enter your Email'
+email_validate: 'Entered Email is not correct'
+phone_mandatory: 'Please enter the phone no'
+place_mandatory: 'Please enter your place'
+interest_mandatory: 'Please enter your interest'
+langcode: ar

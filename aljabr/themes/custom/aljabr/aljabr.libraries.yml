@@ -1,0 +1,21 @@
+aljabr-styling:
+  version: 1
+  css:
+    theme:
+      libraries/aljabr-styling/css/bootstrap.min.css: { media: all }
+      libraries/aljabr-styling/css/style.css: { media: all }
+      libraries/aljabr-styling/css/slimmenu.css: { media: all }
+      libraries/aljabr-styling/css/ion.rangeSlider.css: { media: all }
+      libraries/aljabr-styling/css/ion.rangeSlider.skinSimple.css: { media: all }
+  js:
+    libraries/aljabr-styling/js/bootstrap.min.js: {}
+    libraries/aljabr-styling/js/unslider.min.js: {}
+    libraries/aljabr-styling/js/jquery.slimmenu.js: {}
+    libraries/aljabr-styling/js/jquery.easing.min.js: {}
+    libraries/aljabr-styling/js/ion.rangeSlider.min.js: {}
+    libraries/aljabr-styling/js/style.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form

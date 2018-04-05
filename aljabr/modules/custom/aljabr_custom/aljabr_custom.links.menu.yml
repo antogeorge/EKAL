@@ -1,0 +1,72 @@
+aljabr_custom.set_admin:
+  title: 'Al Jabr settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Web settings.'
+  weight: -10
+  route_name: aljabr_custom.set_admin
+aljabr_custom.set_variable_settings:
+  title: 'Al Jabr settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Web variable settings.'
+  weight: -10
+  route_name: aljabr_custom.set_variable_settings
+aljabr_custom.career_settings:
+  title: 'Al Jabr Career form settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Career form settings.'
+  weight: -10
+  route_name: aljabr_custom.career_settings
+aljabr_custom.career_errormessage:
+  title: 'Al Jabr Career form js error message'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Career form js error message.'
+  weight: -10
+  route_name: aljabr_custom.career_errormessage
+aljabr_custom.comments_settings:
+  title: 'Al Jabr Comments form settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Comments form.'
+  weight: -10
+  route_name: aljabr_custom.comments_settings
+aljabr_custom.email_settings:
+  title: 'Al Jabr Email settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Email trigger form.'
+  weight: -10
+  route_name: aljabr_custom.email_settings
+aljabr_custom.comments_errormessage:
+  title: 'Al Jabr Comments form js error message'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Comments js error message.'
+  weight: -10
+  route_name: aljabr_custom.comments_errormessage
+aljabr_custom_finance.set_admin:
+  title: 'Al Jabr Finance Form Settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Finance form settings.'
+  weight: -10
+  route_name: aljabr_custom_finance.set_admin
+aljabr_custom_message.error_message:
+  title: 'Al Jabr Finance Form JS Error Message'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Finance JS error message settings.'
+  weight: -10
+  route_name: aljabr_custom_message.error_message
+aljabr_custom.subscribe_errormessage:
+  title: 'Al Jabr subscribe mail JS Error Message'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr subscribe mail JS error message settings.'
+  weight: -10
+  route_name: aljabr_custom.subscribe_errormessage
+aljabr_custom_ajax.message:
+  title: 'Al Jabr Finance Form AJAX Message'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Forms AJAX message settings.'
+  weight: -10
+  route_name: aljabr_custom_ajax.message
+aljabr_custom.calculator_settings:
+  title: 'Al Jabr Finance Calculator Settings'
+  parent: system.admin_config_system
+  description: 'Configure Al Jabr Calculator settings.'
+  weight: -10
+  route_name: aljabr_custom.calculator_settings

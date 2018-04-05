@@ -1,0 +1,57 @@
+
+IMG.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:#A2292E;
+                width: 145px;
+            height: 70px; }
+
+        IMG.stc {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 170px;
+            height: 94px; }
+
+        .engfnt{
+          font-family: neosansregular;
+          
+        }
+        .arbfnt{
+          font-family:gessfnt;
+         
+        }
+
+.left {
+  float: left;
+  width: 125px;
+  text-align: right;
+  margin: 2px 10px;
+  display: inline;
+  text-align:left;
+}
+.right {
+  float: left;
+  text-align: left;
+  margin: 2px 10px;
+  display: inline;
+  text-align:right;
+}
+
+
+        table { font-size: 9pt; line-height: 1.2; 
+              margin-top: 2pt; margin-bottom: 5pt;
+              border-collapse: collapse; }
+
+            td {  padding-left: 2mm; 
+              vertical-align: top; 
+              padding-right: 2mm; 
+              padding-top: 0.5mm; 
+              padding-bottom: 0.5mm;
+             }
+
+             .td-bg-danger {
+    box-shadow: 2px 0px 0px #D73D32 inset;
+    /*background-color: #F2DEDE;*/
+}

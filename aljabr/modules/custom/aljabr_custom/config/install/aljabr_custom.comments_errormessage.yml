@@ -1,0 +1,5 @@
+first_name_mandatory: 'Please enter your name'
+phone_mandatory: 'Please enter the phone no'
+place_mandatory: 'Please enter your place'
+comments_mandatory: 'Please enter your comments'
+langcode: ar

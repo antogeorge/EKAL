@@ -1,0 +1,6 @@
+variable configuration:
+  title: 'This is my custom permission'
+  description: 'A custom permission for your.'
+custom submit call:
+  title: 'Custom callback permission'
+  description: 'Custom callback url permission'

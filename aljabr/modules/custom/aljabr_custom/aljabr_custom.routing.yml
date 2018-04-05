@@ -1,0 +1,122 @@
+aljabr_custom.set_admin:
+  path: '/admin/config/aljabr-settings'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrSettingsForm'
+    _title: 'Al Jabr'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.set_variable_settings:
+  path: '/admin/config/aljabr-variable-settings'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrVariableSettingsForm'
+    _title: 'Al Jabr'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.career_settings:
+  path: '/admin/config/aljabr-career-settings'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrCareerSettingsForm'
+    _title: 'Al Jabr'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.email_settings:
+  path: '/admin/config/aljabr-email-settings'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrEmailSettingsForm'
+    _title: 'Al Jabr'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.career_errormessage:
+  path: '/admin/config/aljabr-career-errormessage'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrCareerErrorMessageForm'
+    _title: 'Al Jabr'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom_finance.set_admin:
+  path: '/admin/config/aljabr-finance-form'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrFinanceSettingsForm'
+    _title: 'Al Jabr Finance Form Settings'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom_message.error_message:
+  path: '/admin/config/aljabr-finance-form-errormessage'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrFinanceErrorMessageForm'
+    _title: 'Al Jabr Finance Form JS Error Message Settings'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.comments_settings:
+  path: '/admin/config/aljabr-comments-form-settings'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrCommentsSettingsForm'
+    _title: 'Al Jabr Finance Comment Form Settings'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.comments_errormessage:
+  path: '/admin/config/aljabr-comments-form-errormessage'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrCommentsErrorMessageForm'
+    _title: 'Al Jabr Finance Comment Form Error message'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.subscribe_errormessage:
+  path: '/admin/config/aljabr-subscribemail-form-errormessage'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrSubscribeMailErrorMessageForm'
+    _title: 'Al Jabr Finance subscribe email Form Error message'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom_ajax.message:
+  path: '/admin/config/aljabr-form-ajaxmessage'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrAjaxMessageForm'
+    _title: 'Al Jabr AJAX Message Settings'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.calculator_settings:
+  path: '/admin/config/aljabr-calculator-settings'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrCalculatorSettingsForm'
+    _title: 'Al Jabr Calculator Settings'
+  requirements:
+    _permission: 'variable configuration'
+aljabr_custom.finance_form:
+  path: '/finance'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrFinanceForm'
+    _title: 'Al Jabr Finance'
+  requirements:
+    _permission: 'custom submit call'
+aljabr_custom_finance_submit.callback:
+  path: '/finance-submit'
+  defaults:
+    _controller: '\Drupal\aljabr_custom\Controller\FinanceFormController::financeSubmit'
+  requirements:
+    _permission: 'custom submit call'
+aljabr_custom.branch_map:
+  path: '/branch-map'
+  defaults:
+    _form: '\Drupal\aljabr_custom\Form\AlJabrFinanceBranchMapForm'
+    _title: 'Al Jabr Finance Map'
+  requirements:
+    _permission: 'custom submit call'
+aljabr_custom_career_submit.callback:
+  path: '/career-submit'
+  defaults:
+    _controller: '\Drupal\aljabr_custom\Controller\CareerFormController::careerSubmit'
+  requirements:
+    _permission: 'custom submit call'
+aljabr_custom_comments_submit.callback:
+  path: '/comments-submit'
+  defaults:
+    _controller: '\Drupal\aljabr_custom\Controller\CommentsFormController::commentSubmit'
+  requirements:
+    _permission: 'custom submit call'
+aljabr_custom_emailsubscribe_submit.callback:
+  path: '/emailsubscribe-submit'
+  defaults:
+    _controller: '\Drupal\aljabr_custom\Controller\EmailSubscribeFormController::subscribeSubmit'
+  requirements:
+    _permission: 'custom submit call'

@@ -1,0 +1,25 @@
+# Human-readable name of file
+name: AlJabr
+
+base theme: stable
+
+# Declare 'theme' to distiguish from 'module'
+type: theme
+
+# Short Description
+description: 'Custom theme for Al Jabr website'
+
+# Drupal Version
+core: 8.x
+
+# Define Librar(ies) ,you may need to remove the libraries defined here and add in hook_preprocess_page() if the css and js are seperate for portal and website.
+#libraries:
+#  - aljabr/aljabr-styling
+
+
+# Define regions
+regions:
+  navigation_language: 'Navigation and Language'
+  header: 'Header'
+  content: 'Main Content'
+  footer: 'Footer'

@@ -1,0 +1,10 @@
+name: sample wil
+type: module
+description: 'Adds Al Jabr website customization'
+# version: VERSION
+# core: 8.x
+configure: samplewil.set_admin
+
+version: '8.x-1.0-rc2'
+core: '8.x'
+project: 'aljabr_custom'

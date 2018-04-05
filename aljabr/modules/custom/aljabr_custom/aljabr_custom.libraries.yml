@@ -1,0 +1,111 @@
+finance:
+  version: 1.1
+  css:
+    theme:
+      libraries/aljabr-styling/css/waitMe.min.css: { media: all }
+      libraries/aljabr-styling/css/jquery-ui.css: { media: all }
+  js:
+    libraries/aljabr-styling/js/jquery.validate.js: {}
+    libraries/aljabr-styling/js/waitMe.min.js: {}
+    libraries/aljabr-styling/js/jquery-ui.min.js: {}
+    libraries/aljabr-styling/js/sha512.js: {}
+    libraries/aljabr-styling/js/prettify.js: {}
+    libraries/aljabr-styling/js/jquery.bsAlerts.min.js: {}
+    libraries/aljabr-styling/js/finance.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form
+branch:
+  version: 1.1
+  css:
+    theme:
+      libraries/aljabr-styling/css/waitMe.min.css: { media: all }
+      libraries/aljabr-styling/css/jquery-ui.css: { media: all }
+  js:
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyCKDWC4-6hgD4YwfsiYhO49-CAQ-iAUj78&callback=initMap: { type: external, minified: true }
+    libraries/aljabr-styling/js/jquery.validate.js: {}
+    libraries/aljabr-styling/js/waitMe.min.js: {}
+    libraries/aljabr-styling/js/jquery-ui.min.js: {}
+    libraries/aljabr-styling/js/sha512.js: {}
+    libraries/aljabr-styling/js/prettify.js: {}
+    libraries/aljabr-styling/js/jquery.bsAlerts.min.js: {}
+    libraries/aljabr-styling/js/branch.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form
+career:
+  version: 1.1
+  css:
+    theme:
+      libraries/aljabr-styling/css/waitMe.min.css: { media: all }
+      libraries/aljabr-styling/css/jquery-ui.css: { media: all }
+  js:
+    libraries/aljabr-styling/js/jquery.validate.js: {}
+    libraries/aljabr-styling/js/waitMe.min.js: {}
+    libraries/aljabr-styling/js/jquery-ui.min.js: {}
+    libraries/aljabr-styling/js/sha512.js: {}
+    libraries/aljabr-styling/js/prettify.js: {}
+    libraries/aljabr-styling/js/jquery.bsAlerts.min.js: {}
+    libraries/aljabr-styling/js/career.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form
+comments:
+  version: 1.1
+  css:
+    theme:
+      libraries/aljabr-styling/css/waitMe.min.css: { media: all }
+      libraries/aljabr-styling/css/jquery-ui.css: { media: all }
+  js:
+    libraries/aljabr-styling/js/jquery.validate.js: {}
+    libraries/aljabr-styling/js/waitMe.min.js: {}
+    libraries/aljabr-styling/js/jquery-ui.min.js: {}
+    libraries/aljabr-styling/js/sha512.js: {}
+    libraries/aljabr-styling/js/prettify.js: {}
+    libraries/aljabr-styling/js/jquery.bsAlerts.min.js: {}
+    libraries/aljabr-styling/js/comments.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form
+mail:
+  version: 1.1
+  css:
+    theme:
+      libraries/aljabr-styling/css/waitMe.min.css: { media: all }
+      libraries/aljabr-styling/css/jquery-ui.css: { media: all }
+  js:
+    libraries/aljabr-styling/js/jquery.validate.js: {}
+    libraries/aljabr-styling/js/waitMe.min.js: {}
+    libraries/aljabr-styling/js/jquery-ui.min.js: {}
+    libraries/aljabr-styling/js/sha512.js: {}
+    libraries/aljabr-styling/js/prettify.js: {}
+    libraries/aljabr-styling/js/jquery.bsAlerts.min.js: {}
+    libraries/aljabr-styling/js/subscribe_mail.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form
+installment-calculator:
+  version: 1.1
+  css:
+    theme:
+      libraries/aljabr-styling/css/simple-slider.css: { media: all }
+      libraries/aljabr-styling/css/simple-slider-volume.css: { media: all }
+  js:
+    libraries/aljabr-styling/js/jquery.number.min.js: {}
+    libraries/aljabr-styling/js/simple-slider.js: {}
+    libraries/aljabr-styling/js/installment_calculator.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.form

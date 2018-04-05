@@ -1,0 +1,185 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Stable theme.
+ */
+
+use Drupal\Component\Utility\Html;
+
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function aljabr_preprocess_page(&$variables) {
+  if ($variables['is_front']) {
+    /** if home page **/
+    /**  You may need to add the template libraries here and remove from info if the portal and website css or js are different. Condition if user logged in. **/
+    //$variables['#attached']['library'][] = 'aljabr/aljabr-styling';
+  }
+  $variables['route_name'] = \Drupal::routeMatch()->getRouteName();
+  $variables['#attached']['library'][] = 'aljabr/aljabr-styling';
+
+  $variables['rtl'] = '';
+  $variables['stc'] = '';
+  $variables['signup'] = '';
+  $variables['onroad'] = t('Get on Road Price');
+  $variables['tempath'] = drupal_get_path('theme', 'aljabr') . '/images/';
+  
+  $_SERVER['REQUEST_URI_PATH'] = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+  $segments = explode('/', $_SERVER['REQUEST_URI_PATH']);
+  $rtl = $segments[1];
+
+  $page_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['#attached']['drupalSettings']['page_lang'] = $page_language;
+
+  $copyright = t('aljabr Finance. All rights reserved');
+  //$variables['copyright'] = date('Y') . ' '. $copyright;
+  $variables['backtotop'] = t('Back to Top');
+  $variables['branches'] = t('Branches');
+  $variables['logged_in'] = \Drupal::currentUser()->isAuthenticated();
+  
+  /**
+  * config variables start
+  */
+  if($page_language == 'en') {
+	  $variables['copyright'] = theme_get_setting('copyright_en') . date('Y');
+	  $variables['apply_funding_headline'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_headline_en');
+	  $variables['apply_funding_description'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_description_en');
+	  $variables['apply_funding_button'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_button_en');
+	  $variables['required_documents_headline'] = \Drupal::config('aljabr_custom.settings')->get('required_documents_headline_en');
+	  $variables['required_documents_description'] = \Drupal::config('aljabr_custom.settings')->get('required_documents_description_en');
+	  $variables['aljabr_branches_heading'] = \Drupal::config('aljabr_custom.settings')->get('aljabr_branches_heading_en');
+	  $variables['aljabr_branches_description'] = \Drupal::config('aljabr_custom.settings')->get('aljabr_branches_description_en');
+	  $variables['finance_calculator_heading'] = \Drupal::config('aljabr_custom.settings')->get('finance_calculator_heading_en');
+	  $variables['finance_calculator_description'] = \Drupal::config('aljabr_custom.settings')->get('finance_calculator_description_en');
+  } else {
+	  $variables['rtl'] = true;
+	  $variables['copyright'] = theme_get_setting('copyright_ar') . date('Y');
+	  $variables['apply_funding_headline'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_headline_ar');
+	  $variables['apply_funding_description'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_description_ar');
+	  $variables['apply_funding_button'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_button_ar');
+	  $variables['required_documents_headline'] = \Drupal::config('aljabr_custom.settings')->get('required_documents_headline_ar');
+	  $variables['required_documents_description'] = \Drupal::config('aljabr_custom.settings')->get('required_documents_description_ar');
+	  $variables['aljabr_branches_heading'] = \Drupal::config('aljabr_custom.settings')->get('aljabr_branches_heading_ar');
+	  $variables['aljabr_branches_description'] = \Drupal::config('aljabr_custom.settings')->get('aljabr_branches_description_ar');
+	  $variables['finance_calculator_heading'] = \Drupal::config('aljabr_custom.settings')->get('finance_calculator_heading_ar');
+	  $variables['finance_calculator_description'] = \Drupal::config('aljabr_custom.settings')->get('finance_calculator_description_ar');
+  }
+  
+  
+  $variables['apply_funding_button_url'] = \Drupal::config('aljabr_custom.settings')->get('apply_funding_button_url');
+  $data = \Drupal::config('aljabr_custom.settings')->get('apply_funding_headline_en'); 
+  //echo "testwww ".$data; exit();
+}
+
+
+/**
+ * Implements template_preprocess_links().
+ */
+function aljabr_preprocess_links(&$variables) {
+  // @deprecated in Drupal 8.0.x and will be removed before 9.0.0. This feature
+  // of adding a class based on the associative key can cause CSS class name
+  // conflicts.
+  if (!empty($variables['links'])) {
+    foreach ($variables['links'] as $key => $value) {
+      if (!is_numeric($key)) {
+        $class = Html::getClass($key);
+        $variables['links'][$key]['attributes']->addClass($class);
+      }
+    }
+  }
+}
+
+/**
+ * Implements template_form_system_theme_settings_alter
+ */
+function aljabr_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['copyright_en'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Copyright Text English'),
+    '#default_value' => theme_get_setting('copyright_en'),
+    '#description'   => t("Copyright text in English for the website."),
+  );
+
+  $form['copyright_ar'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Copyrigh Text Arabic'),
+    '#default_value' => theme_get_setting('copyright_ar'),
+    '#description'   => t("Copyright text in Arabic for the website."),
+  );
+}
+
+/**
+ * Implements template_preprocess_image().
+ */
+function aljabr_preprocess_image(&$vars) {
+  //if ($vars['style_name'] == 'bann') {
+    // Remove explicit width & height declaration.
+    unset($vars['width'], $vars['height'], $vars['attributes']['width'], $vars['attributes']['height']);
+  //}
+}
+
+
+/**
+ *
+ * Implements hook_theme_suggestions_alter
+ *
+ */
+
+function aljabr_theme_suggestions_alter(array &$suggestions, array $variables) {
+    if (isset($variables['element']) && isset($variables['element']['#type']) && $variables['element']['#type'] == 'form') {
+
+        $original_theme_hook = $variables['theme_hook_original'];
+
+
+        $suggestions[] = $original_theme_hook . '__' . str_replace('-', '_', $variables['element']['#id']);
+
+
+    }
+
+    return $suggestions;
+
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter
+ */
+function aljabr_theme_suggestions_user_alter(array &$suggestions, array $variables, $hook) {
+  $suggestions[] = $variables['theme_hook_original'] . '__' . str_replace('-', '_', $variables['elements']['#view_mode']);
+  return $suggestions;
+}
+
+function aljabr_preprocess_form(&$variables) {
+	$element = $variables['element'];
+	if($element['#id'] == 'aljabr-finance') {
+		$variables['form_class'] = 'finance-form-group'; 
+	}
+	if($element['#id'] == 'aljabr-career') {
+		$variables['form_class'] = 'comments-form'; 
+		$variables['career_form_header'] = \Drupal::config('aljabr_custom.variable_settings')->get('career_form_header');
+	}
+	if($element['#id'] == 'aljabr-comments') {
+		$variables['form_class'] = 'comments-form'; 
+		$variables['comments_header'] = \Drupal::config('aljabr_custom.variable_settings')->get('comments_header');
+		$variables['comments_body'] = \Drupal::config('aljabr_custom.variable_settings')->get('comments_body');
+		$variables['comments_button'] = \Drupal::config('aljabr_custom.variable_settings')->get('comments_button');
+		$variables['comments_form_header'] = \Drupal::config('aljabr_custom.variable_settings')->get('comments_form_header');
+		$variables['comments_form_body'] = \Drupal::config('aljabr_custom.variable_settings')->get('comments_form_body');
+	}
+	if($element['#id'] == 'aljabr-mail') {
+		$variables['form_class'] = 'comments-form'; 
+		$variables['subscribemail_header'] = \Drupal::config('aljabr_custom.variable_settings')->get('subscribemail_header');
+		$variables['subscribemail_body'] = \Drupal::config('aljabr_custom.variable_settings')->get('subscribemail_body');
+		$variables['subscribemail_button'] = \Drupal::config('aljabr_custom.variable_settings')->get('subscribemail_button');
+		$variables['subscribemail_form_header'] = \Drupal::config('aljabr_custom.variable_settings')->get('subscribemail_form_header');
+		$variables['subscribemail_form_body'] = \Drupal::config('aljabr_custom.variable_settings')->get('subscribemail_form_body');
+	}
+	
+	$variables['branch_form_text'] = \Drupal::config('aljabr_custom.variable_settings')->get('branches_form_text_prefix');
+}

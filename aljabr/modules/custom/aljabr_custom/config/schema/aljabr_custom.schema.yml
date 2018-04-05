@@ -1,0 +1,531 @@
+aljabr_custom.settings:
+  type: config_object
+  mapping:
+    apply_funding_headline_en:
+      type: string
+      label: 'Apply funding heading english'
+    apply_funding_description_en:
+      type: string
+      label: 'Apply funding description english'
+    apply_funding_headline_ar:
+      type: string
+      label: 'Apply funding heading arabic'
+    apply_funding_description_ar:
+      type: string
+      label: 'Apply funding description arabic'
+    apply_funding_button_en:
+      type: string
+      label: 'Apply funding button value english'
+    apply_funding_button_ar:
+      type: string
+      label: 'Apply funding button value arabic'
+    apply_funding_button_url:
+      type: string
+      label: 'Apply funding button URL'
+    required_documents_headline_en:
+      type: string
+      label: 'Required documents heading english'
+    required_documents_headline_ar:
+      type: string
+      label: 'Required documents heading arabic'
+    required_documents_description_en:
+      type: string
+      label: 'Required documents description english'
+    required_documents_description_ar:
+      type: string
+      label: 'Required documents description arabic'
+    aljabr_branches_heading_en:
+      type: string
+      label: 'Al Jabr branch heading english'
+    aljabr_branches_description_en:
+      type: string
+      label: 'Al Jabr branch description english'
+    aljabr_branches_heading_ar:
+      type: string
+      label: 'Al Jabr branch heading arabic'
+    aljabr_branches_description_ar:
+      type: string
+      label: 'Al Jabr branch description arabic'
+    finance_calculator_heading_en:
+      type: string
+      label: 'Finance calculator heading english'
+    finance_calculator_description_en:
+      type: string
+      label: 'Finance calculator description english'
+    finance_calculator_heading_ar:
+      type: string
+      label: 'Finance calculator heading arabic'
+    finance_calculator_description_ar:
+      type: string
+      label: 'Finance calculator description arabic'
+    offer_page_side_banner1_heading_en:
+      type: string
+      label: 'Offer page side banner 1 heading english'
+    offer_page_side_banner1_heading_ar:
+      type: string
+      label: 'Offer page side banner 1 heading arabic'
+    offer_page_side_banner1_desc_en:
+      type: string
+      label: 'Offer page side banner 1 description english'
+    offer_page_side_banner1_desc_ar:
+      type: string
+      label: 'Offer page side banner 1 description arabic'
+    offer_page_side_banner1_button_en:
+      type: string
+      label: 'Offer page side banner 1 button english'
+    offer_page_side_banner1_button_ar:
+      type: string
+      label: 'Offer page side banner 1 button arabic'
+    offer_page_side_banner2_heading_en:
+      type: string
+      label: 'Offer page side banner 2 heading english'
+    offer_page_side_banner2_heading_ar:
+      type: string
+      label: 'Offer page side banner 2 heading arabic'
+    offer_page_side_banner2_desc_en:
+      type: string
+      label: 'Offer page side banner 2 description english'
+    offer_page_side_banner2_desc_ar:
+      type: string
+      label: 'Offer page side banner 2 description arabic'
+    offer_page_side_banner2_button_en:
+      type: string
+      label: 'Offer page side banner 2 button english'
+    offer_page_side_banner2_button_ar:
+      type: string
+      label: 'Offer page side banner 2 button arabic'
+    first_name:
+      type: label
+      label: 'Name'
+    personal_details:
+      type: label
+      label: 'Personal Details'
+    residency_card:
+      type: label
+      label: 'ID/Residency card'
+    place_issue:
+      type: label
+      label: 'Place of Issue'
+    date_issue:
+      type: label
+      label: 'Date of Issue'
+    expiry_date:
+      type: label
+      label: 'Expiry Date'
+    sex_label:
+      type: label
+      label: 'Sex label'
+    male:
+      type: label
+      label: 'Male'
+    female:
+      type: label
+      label: 'Female'
+    nationality:
+      type: label
+      label: 'Nationality'
+    mobile_no:
+      type: label
+      label: 'Mobile No'
+    residence_no:
+      type: label
+      label: 'Residence Tel. No.'
+    marital_status:
+      type: label
+      label: 'Marital Status'
+    married:
+      type: label
+      label: 'Married'
+    single:
+      type: label
+      label: 'Single'
+    address:
+      type: label
+      label: 'Address'
+    residence_details:
+      type: label
+      label: 'Residence Details'
+    pbno:
+      type: label
+      label: 'P.B. No.'
+    city:
+      type: label
+      label: 'City'
+    postal_code:
+      type: label
+      label: 'Postal Code'
+    district:
+      type: label
+      label: 'District'
+    street:
+      type: label
+      label: 'Street'
+    building_no:
+      type: label
+      label: 'Building No.'
+    accomodation_type:
+      type: label
+      label: 'Accommodation Type'
+    annual_rent:
+      type: label
+      label: 'Annual Rent'
+    employer:
+      type: label
+      label: 'Job Details'
+    job_title:
+      type: label
+      label: 'Job Title'
+    job_details:
+      type: label
+      label: 'Job Details'
+    doj:
+      type: label
+      label: 'Date of Joining'
+    office_address:
+      type: label
+      label: 'Office Address'
+    post_box:
+      type: label
+      label: 'Post Box'
+    income:
+      type: label
+      label: 'Income / Salary'
+    net_salary:
+      type: label
+      label: 'Net Income / Net Salary'
+    additional_income:
+      type: label
+      label: 'Value of Additional Income / Yearly Income'
+    car_model:
+      type: label
+      label: 'Car Model'
+    lease_details:
+      type: label
+      label: 'Lease Details'
+    car_brand:
+      type: label
+      label: 'Brand'
+    car_price:
+      type: label
+      label: 'Price'
+    car_type:
+      type: label
+      label: 'Type'
+    down_payment:
+      type: label
+      label: 'Value of Down Payment'
+    period:
+      type: label
+      label: 'Repayment Period'
+    max_value_monthly:
+      type: label
+      label: 'Maximum Value of the monthly Premium'
+    max_value_lastpayment:
+      type: label
+      label: 'Value of Last Payment'
+    submit_val:
+      type: label
+      label: 'Submit Value'
+aljabr_custom.error_message:
+  type: config_object
+  mapping:
+    name_mandatory:
+      type: label
+      label: 'First Name Mandatory Message'
+    residency_card_mandatory:
+      type: label
+      label: 'Residency card Mandatory Message'
+    date_issue_mandatory:
+      type: label
+      label: 'Date of Issue Mandatory Message'
+    expiry_date_mandatory:
+      type: label
+      label: 'Expiry Date Mandatory Message'
+    mobile_no_mandatory:
+      type: label
+      label: 'Mobile no Mandatory Message'
+    annual_rent_mandatory:
+      type: label
+      label: 'Annual Rent Mandatory Message'
+    income_mandatory:
+      type: label
+      label: 'Income Mandatory Message'
+    netsalary_mandatory:
+      type: label
+      label: 'Net salary Message'
+    car_model_mandatory:
+      type: label
+      label: 'Car model mandatory message'
+    car_brand_mandatory:
+      type: label
+      label: 'Car brand mandatory message'
+    car_price_mandatory:
+      type: label
+      label: 'Car price mandatory message'
+    car_type_mandatory:
+      type: label
+      label: 'Car type mandatory message'
+    downpayment_mandatory:
+      type: label
+      label: 'Down payment mandatory message'
+    period_mandatory:
+      type: label
+      label: 'Period mandatory message'
+aljabr_custom.ajax_message:
+  type: config_object
+  mapping:
+    invalid_message:
+      type: label
+      label: 'Invalid input Message'
+    failure_message:
+      type: label
+      label: 'Error/ Danger/ Failure Message'
+    success_message:
+      type: label
+      label: 'Success Message'
+aljabr_custom.variable_settings:
+  type: config_object
+  mapping:
+    branches_form_text_prefix:
+      type: label
+      label: 'Branches page form prefix text'
+    comments_header:
+      type: label
+      label: 'Offer page comments header'
+    comments_body:
+      type: label
+      label: 'Offer page comments body'
+    comments_button:
+      type: label
+      label: 'Offer page comments button'
+    comments_form_header:
+      type: label
+      label: 'Offer page comments form header'
+    comments_form_body:
+      type: label
+      label: 'Offer page comments form body'
+    career_form_header:
+      type: label
+      label: 'Career page form header'
+    subscribemail_header:
+      type: label
+      label: 'Offer page subscribe mail header'
+    subscribemail_body:
+      type: label
+      label: 'Offer page subscribe body'
+    subscribemail_button:
+      type: label
+      label: 'Offer page subscribe button'
+    subscribemail_form_header:
+      type: label
+      label: 'Offer page subscribe form header'
+    subscribemail_form_body:
+      type: label
+      label: 'Offer page subscribe form body'
+    job_title:
+      type: label
+      label: 'Job title'
+    job_date:
+      type: label
+      label: 'Jobe Date'
+    table_header:
+      type: label
+      label: 'Table Header'
+    branch_header:
+      type: label
+      label: 'Branch Header'
+    branch_url:
+      type: label
+      label: 'Branch URL'
+    branch_label:
+      type: label
+      label: 'Branch Label'
+    headoffice_branch_lat:
+      type: label
+      label: 'Latitude'
+    headoffice_branch_long:
+      type: label
+      label: 'Longitude'
+aljabr_custom.career_settings:
+  type: config_object
+  mapping:
+    first_name:
+      type: label
+      label: 'Name'
+    email:
+      type: label
+      label: 'Email'
+    phone:
+      type: label
+      label: 'Phone No'
+    place:
+      type: label
+      label: 'Place'
+    interest:
+      type: label
+      label: 'Interest'
+aljabr_custom.career_errormessage:
+  type: config_object
+  mapping:
+    first_name_mandatory:
+      type: label
+      label: 'Name Mandatory'
+    email_mandatory:
+      type: label
+      label: 'Email Mandatory'
+    email_validate:
+      type: label
+      label: 'Email Validation'
+    phone_mandatory:
+      type: label
+      label: 'Phone No Mandatory'
+    place_mandatory:
+      type: label
+      label: 'Place Mandatory'
+    interest_mandatory:
+      type: label
+      label: 'Interest Mandatory'
+aljabr_custom.comments_settings:
+  type: config_object
+  mapping:
+    first_name:
+      type: label
+      label: 'Name'
+    phone:
+      type: label
+      label: 'Phone No'
+    place:
+      type: label
+      label: 'Place'
+    comments:
+      type: label
+      label: 'Comments'
+aljabr_custom.comments_errormessage:
+  type: config_object
+  mapping:
+    first_name_mandatory:
+      type: label
+      label: 'Name Mandatory'
+    phone_mandatory:
+      type: label
+      label: 'Phone No Mandatory'
+    place_mandatory:
+      type: label
+      label: 'Place Mandatory'
+    comments_mandatory:
+      type: label
+      label: 'Comments Mandatory'
+aljabr_custom.subscribe_errormessage:
+  type: config_object
+  mapping:
+    first_name_mandatory:
+      type: label
+      label: 'Name Mandatory'
+    email_mandatory:
+      type: label
+      label: 'Email Id Mandatory'
+    email_validate:
+      type: label
+      label: 'Email Id Validation'
+aljabr_custom.email_settings:
+  type: config_object
+  mapping:
+    email_subscribe_form_subject:
+      type: label
+      label: 'Subscribe to our Email - Subject'
+    home:
+      type: label
+      label: 'Home Label'
+    career_form_subject:
+      type: label
+      label: 'Career Form - Subject'
+    comments_form_subject:
+      type: label
+      label: 'Comments Form - Subject'
+    finance_form_subject:
+      type: label
+      label: 'Finance Form - Subject'
+    smtp_secure:
+      type: label
+      label: 'SMTP Secure'
+    host:
+      type: label
+      label: 'Host'
+    port:
+      type: label
+      label: 'Port'
+    username:
+      type: label
+      label: 'Username'
+    pass:
+      type: label
+      label: 'Password'
+    fromemail:
+      type: label
+      label: 'From'
+    toemail:
+      type: label,
+      label: 'To Email'
+aljabr_custom.calculator_settings:
+  type: config_object
+  mapping:
+    period_funding:
+      type: label
+      label: 'Period of Funding'
+    finance_value:
+      type: label
+      label: 'Finance Value'
+    car_price:
+      type: label
+      label: 'Car Price'
+    car_price_val:
+      type: label
+      label: 'Car Price Amount'
+    insurance_value:
+      type: 'label'
+      label: 'Insurance Value'
+    emi:
+      type: label
+      label: 'Monthly Installment'
+    downpayment:
+      type: label
+      label: 'Downpayment Slider'
+    downpayment_percent:
+      type: label
+      label: 'Downpayment Percentage'
+    downpayment_val:
+      type: label
+      label: 'Downpayment Value'
+    intrest_rate_value:
+      type: label
+      label: 'Rental Margin'
+    lastpayment:
+      type: label
+      label: 'Last Payment'
+    lastpayment_percent:
+      type: label
+      label: 'Last Payment Percentage'
+    lastpayment_val:
+      type: label
+      label: 'Last Payment Value'
+    total:
+      type: label
+      label: 'Total Price'
+    duration:
+      type: label
+      label: 'Duration'
+    net_price:
+      type: label
+      label: 'Net Price Default Value'
+    insurance_ratio:
+      type: label
+      label: 'Insurance Ratio Default Value'
+    interst_ratio:
+      type: label
+      label: 'Interest Ratio Default Value'
+    rv:
+      type: label
+      label: 'RV Default Value'
+    amount:
+      type: label
+      label: 'Duration Default Value'

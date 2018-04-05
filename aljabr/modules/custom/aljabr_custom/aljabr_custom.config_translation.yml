@@ -1,0 +1,55 @@
+aljabr_custom_finance.set_admin:
+  title: 'Al Jabr Finance config'
+  base_route_name: aljabr_custom_finance.set_admin
+  names:
+    - aljabr_custom.settings
+aljabr_custom_message.error_message:
+  title: 'Al Jabr Finance JS error message'
+  base_route_name: aljabr_custom_message.error_message
+  names:
+    - aljabr_custom.error_message
+aljabr_custom_ajax.message:
+  title: 'Al Jabr AJAX error message'
+  base_route_name: aljabr_custom_ajax.message
+  names:
+    - aljabr_custom.ajax_message
+aljabr_custom.set_variable_settings:
+  title: 'Al Jabr Finance variable config'
+  base_route_name: aljabr_custom.set_variable_settings
+  names:
+    - aljabr_custom.variable_settings
+aljabr_custom.career_settings:
+  title: 'Al Jabr Career config'
+  base_route_name: aljabr_custom.career_settings
+  names:
+    - aljabr_custom.career_settings
+aljabr_custom.career_errormessage:
+  title: 'Al Jabr Career JS error message'
+  base_route_name: aljabr_custom.career_errormessage
+  names:
+    - aljabr_custom.career_errormessage
+aljabr_custom.comments_settings:
+  title: 'Al Jabr Comments settings'
+  base_route_name: aljabr_custom.comments_settings
+  names:
+    - aljabr_custom.comments_settings
+aljabr_custom.comments_errormessage:
+  title: 'Al Jabr Comments error message'
+  base_route_name: aljabr_custom.comments_errormessage
+  names:
+    - aljabr_custom.comments_errormessage
+aljabr_custom.subscribe_errormessage:
+  title: 'Al Jabr subscribe email error message'
+  base_route_name: aljabr_custom.subscribe_errormessage
+  names:
+    - aljabr_custom.subscribe_errormessage
+aljabr_custom.email_settings:
+  title: 'Al Jabr Email config'
+  base_route_name: aljabr_custom.email_settings
+  names:
+    - aljabr_custom.email_settings
+aljabr_custom.calculator_settings:
+  title: 'Al Jabr Calculator config'
+  base_route_name: aljabr_custom.calculator_settings
+  names:
+    - aljabr_custom.calculator_settings
